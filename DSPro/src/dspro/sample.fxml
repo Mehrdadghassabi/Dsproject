@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="687.0" prefWidth="789.0" rotate="-0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dspro.FXMLDocumentController">
+   <children>
+      <MenuBar id="menuBar" prefHeight="37.0" prefWidth="789.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <RadioButton id="phonNumberRB" layoutX="658.0" layoutY="42.0" mnemonicParsing="false" text="phonNumber">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="carRB" layoutX="559.0" layoutY="42.0" mnemonicParsing="false" text="car" toggleGroup="$toggleGroup" />
+      <RadioButton id="homeRB" layoutX="414.0" layoutY="42.0" mnemonicParsing="false" text="home" toggleGroup="$toggleGroup" />
+      <RadioButton id="bankAccountRB" layoutX="227.0" layoutY="42.0" mnemonicParsing="false" text="bankAccount" toggleGroup="$toggleGroup" />
+      <RadioButton id="personRB" layoutX="93.0" layoutY="42.0" mnemonicParsing="false" text="person" toggleGroup="$toggleGroup" />
+      <TextField id="searchField" layoutX="2.0" layoutY="67.0" prefHeight="31.0" prefWidth="339.0" promptText="Search :" />
+      <Button id="searchBTN" fx:id="searchBTN" layoutX="355.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="128.0" text="Search !" />
+      <Label layoutX="5.0" layoutY="42.0" prefHeight="21.0" prefWidth="83.0" text="Search for :" wrapText="true" />
+      <Label id="chooseLabel" layoutX="579.0" layoutY="72.0" prefHeight="21.0" prefWidth="196.0" textAlignment="CENTER" />
+      <TextArea fx:id="Texta" editable="false" layoutY="118.0" prefHeight="567.0" prefWidth="789.0" />
+      <Button fx:id="Button2" layoutX="494.0" layoutY="67.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="94.0" text="phase2" />
+      <Button fx:id="Button4" layoutX="702.0" layoutY="67.0" mnemonicParsing="false" text="phase4" />
+      <Button fx:id="Button3" layoutX="606.0" layoutY="67.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="83.0" text="phase3" />
+   </children>
+</Pane>
